@@ -1,0 +1,243 @@
+@charset "utf-8";
+/*
+Theme Name: ★BizVektor子テーマサンプル★
+Theme URI: http://bizvektor.com
+Template: biz-vektor
+Description:
+Author: ★あなた ｍ９っ・ｗ・）ｂ★
+Tags:
+Version: 0.1.0
+*/
+body {
+
+	font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+}
+
+div.ob_entry {
+	text-align: center;
+}
+div.ob_entry a.btn.btnL {
+    padding: 1em 2em;
+	font-size: 160%;
+    line-height: normal;
+}
+
+@media (max-width: 414px){
+div.ob_entry a.btn.btnL {
+    padding: 1em;
+	font-size: 140%;
+	width: 85%;
+}
+}
+
+/* 最上部description部分の上を空ける */
+@media (min-width: 970px) {
+#headerTop .innerBox {
+	padding-top: 5px;
+}
+}
+/* 最上部descriptionとロゴの間隔調整 */
+@media (min-width: 970px){
+#header .innerBox { padding-top: 5px;}
+}
+
+
+
+#content h2 {
+
+}
+
+#content section {
+	margin-bottom: 30px;
+}
+
+/* PC画面でメインエリアの幅を広くする */
+@media (min-width: 970px) {
+#main #container #content { width:670px; }
+}
+
+/* PC画面でサイドバーの幅を広くする */
+@media (min-width: 970px) {
+	#main #container #sideTower { width:250px; }
+}
+
+@media (min-width: 770px) {
+	#gMenu .menu li ul li {
+	    width: 220px !important;
+	}
+}
+
+.post_title_image {
+	margin-bottom: 30px;
+}
+
+#fc2form .message {
+	margin : 1em;
+}
+
+#fc2form div.title {
+	margin:1em;
+	padding-left: 1em;
+	list-style-type: none;
+	background-color: #EEE;
+}
+
+#fc2form div.comment {
+	margin:1em;
+		padding-left: 1em;
+}
+
+
+#fc2form div.comment textarea {
+	width:70%
+}
+
+#content #topInfo, #content #topBlog {
+    margin-bottom: 0px;
+}
+
+#topPr {
+    margin-bottom: 0px;
+}
+
+
+
+@media (min-width: 970px){
+#gMenu .menu > li.current_menu_item, #gMenu .menu > li.current-menu-item, #gMenu .menu > li.current-menu-ancestor, #gMenu .menu > li.current_page_item, #gMenu .menu > li.current_page_ancestor, #gMenu .menu > li.current-page-ancestor {
+    width: 137px;
+}
+}
+
+body.home #content h2 {
+	text-align:center;
+}
+
+.course td:first-child {
+	background-color: #d9ed93;
+	white-space:nowrap;
+}
+
+/* サイドバーのメタスライダーのpadding削除 */
+.sideWidget div.metaslider li a {
+	padding:0px;
+}
+
+.igsv-table thead {
+	display: none;
+}
+
+/* 申込フォームの送信ボタンを大きく */
+.mw_wp_form input[type=submit] {
+	font-size:150%;
+    padding: 1em 1.5em;
+}
+
+@media (max-width: 414px) {
+.mw_wp_form input[type=submit] {
+	font-size:130%;
+    padding: 1em;
+    width:100%;
+}
+}
+
+
+/* H3小さく */
+#content h3 {
+	font-size: 120%;
+	margin-top: 0px;
+}
+
+
+/* フォームチェックボックス　▼通常の表示 */
+.mwform-checkbox-field label {
+	width: 97%;
+   border: 0px solid #d9ed93;  /* 枠線 */
+   border-radius: 15px;         /* 枠線の角丸 */
+		padding: 3px 6px 3px 2px;    /* 内側の余白 */
+   margin-bottom: 0px;         /* 外側の下の余白 */
+   display: inline-block;      /* 途中で改行させない */
+   cursor: pointer;            /* マウス形状を手形に */
+   background-color: #d9ed93;
+	 font-family: sans-serif;
+	 color: black;
+	 padding: 5px;
+}
+
+
+/* フォームチェックボックス　▼マウスが載ったときの追加装飾 */
+@media (min-width: 768px){
+	.mwform-checkbox-field label:hover {
+	   background-color: #91bc0f;  /* 背景色 */
+	   color: white;            /* 文字色 */
+	}
+}
+/* フォームチェックボックス　▼マウスが載ったときの追加装飾 */
+.mwform-checkbox-field label.checked {
+   background-color: #91bc0f;  /* 背景色 */
+   color: white;            /* 文字色 */
+}
+
+
+
+/* フォームチェックボックス 中央揃え */
+.mw_wp_form .vertical-item {
+	text-align:center;
+}
+
+/* 必須ラベル */
+.su-label-type-important {
+	margin-left: 10px;
+	background-color: #91bc0f !important;
+}
+
+/* フォームページ連絡先へジャンプボタン */
+@media (min-width: 768px){
+.jump_btn a.btnL{
+	font-size: 90%;
+	margin-top:0px;
+	padding:0.5em 1.5em;
+}
+}
+/* フォームページ教室ジャンプボタン */
+@media (max-width: 414px) {
+a.class_jmp_btn  {
+	width:90%;
+	text-align:center;
+	margin-top:5px;
+}
+}
+
+/* トップページのブログ一覧*/
+#content .infoList .infoListBox div.entryTxtBox.haveThumbnail {
+		float: none;
+}
+
+/* トップページのブログ一覧のサムネイル */
+#content .infoList .infoListBox div.thumbImage div.thumbImageInner img {
+		margin-left: 10px;
+		width:200px;
+}
+
+
+/* トップページのブログ一覧 (スマホ用) */
+@media (max-width: 414px) {
+
+	#content .infoList .infoListBox div.thumbImage {
+    	float: none;
+	}
+	#content .infoList .infoListBox div.thumbImage div.thumbImageInner img {
+		width: 100%;
+		margin-left: 0px;
+		margin-bottom: 10px;
+	}
+
+}
+
+#content ul {
+  margin: 0 0 0 0;
+}
+
+.su-note-inner {
+    text-align: center;
+}

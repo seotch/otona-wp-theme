@@ -1,0 +1,85 @@
+.ob_instructor {
+	padding:0.5em;
+	padding-bottom: 1.5em;
+	margin-top: 0em;
+	margin-bottom: 2em;
+	line-height:  initial;
+	border-bottom: dotted 1px #aaa;
+}
+
+	.ob_instructor .avatar img {
+		width: 100%;
+	}
+
+
+.ob_instructor .images {
+	text-align:center;
+	margin-bottom: 10px;
+}
+
+@media (min-width: 670px) {
+	.ob_instructor .images {
+		float:left;
+		margin-right:20px;
+	}
+}
+
+
+
+
+.ob_instructor .name {
+	display:inline-block;
+	font-size: 1.8em;
+	font-weight: normal;
+	vertical-align: middle;
+	color: #333;
+	margin-right:1em;
+
+}
+
+.ob_instructor .name_kana {
+	display:inline-block;
+	color: #888;
+	margin-bottom: 0.5em;
+
+}
+
+
+.ob_instructor .title {
+	font-size: 1.2em;
+	color: #888;
+	margin-bottom: 0.5em;
+}
+
+.ob_instructor .data {
+	overflow : hidden;
+}
+
+.ob_instructor .data .description {
+
+
+}
+
+
+.ob_instructor .link_buttons a {
+
+}
+
+.ob_instructor .link_buttons {
+		margin-top: 0.5em;
+		text-align: right;
+}
+
+
+.ob_instructor .link_buttons a img {
+	width: 24px;
+	height: 32px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
