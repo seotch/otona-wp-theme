@@ -65,6 +65,43 @@ get_header(); ?>
     <?php if ($the_Course['type'] != '通信講座') { ?>
       <h3 id="class_lecture">教室受講 <a href="http://otonanobijutsu.com/faq/%E6%95%99%E5%AE%A4%E5%8F%97%E8%AC%9B%E3%81%A8%E3%83%93%E3%83%87%E3%82%AA%E5%8F%97%E8%AC%9B%E3%81%AE%E9%81%95%E3%81%84%E3%81%AF%EF%BC%9F">(教室受講とは？)</a></h3>
     <?php } ?>
+
+
+    <?php if ($the_Course['name'] == 'ZBrush基礎講座') { ?>
+        <!-- ZBrush追加講座　募集要項 -->
+        <table>
+        <tbody>
+            <tr>
+                <th>回数・期間</th>
+                <td style="font-weight:bold; color:red;">週1日・1.5ヶ月/全5日程・10回</td>
+            </tr>
+            <tr>
+                <th>募集時期</th>
+                <td style="font-weight:bold; color:red;">特別設定</td>
+            </tr>
+            <tr>
+                <th>開講日</th>
+                <td style="font-weight:bold; color:red;">11月13日</td>
+            </tr>
+
+            <tr>
+                <th>曜日・時間</th>
+                <td style="font-weight:bold; color:red;">土15:00-19:30</td>
+            </tr>
+
+        <tr>
+            <th>入部費</th>
+            <td><?php echo $the_Course['entry_fee'];?></td>
+        </tr>
+        <tr>
+            <th>授業料</th>
+            <td><?php echo $the_Course['tuition'];?></td>
+        </tr>
+        </tbody>
+    </table>
+    <p>※受講内容は通常のZBrush基礎講座と全く同一になります。1日程にて2コマ分を開催致します。<br/><br/></p>
+    <?php } ?>
+
     <table>
         <tbody>
             <tr>
