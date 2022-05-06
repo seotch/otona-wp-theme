@@ -35,7 +35,7 @@ get_header(); ?>
         <a class="btn btnL" href="#special">講座を体験する</a>
         <a class="btn btnL" href="<?php bloginfo('url'); ?>/entry/entry-course#course-<?php the_ID(); ?>">講座に申し込む</a>
     <?php } elseif ($the_Course['type'] == '添削塾') {?>
-        <a class="btn btnL" href="<?php bloginfo('url'); ?>/entry/entry-course#course-<?php the_ID(); ?>">添削塾に申し込む</a>
+        <a class="btn btnL" href="<?php bloginfo('url'); ?>/entry/entry-course#course-<?php the_ID(); ?>">申し込む</a>
     <?php } elseif ($the_Course['type'] == '通信講座') {?>
         <a class="btn btnL" href="<?php bloginfo('url'); ?>/entry/entry-correspond#course-<?php the_ID(); ?>">通信講座に申し込む</a>
     <?php } elseif ($the_Course['type'] == 'スポット講座') {?>
@@ -67,41 +67,6 @@ get_header(); ?>
     <?php } ?>
 
 
-    <?php if ($the_Course['name'] == 'ZBrush基礎講座') { ?>
-        <!-- ZBrush追加講座　募集要項 -->
-        <table>
-        <tbody>
-            <tr>
-                <th>回数・期間</th>
-                <td style="font-weight:bold; color:red;">週1日・1.5ヶ月/全5日程・10回</td>
-            </tr>
-            <tr>
-                <th>募集時期</th>
-                <td style="font-weight:bold; color:red;">特別設定</td>
-            </tr>
-            <tr>
-                <th>開講日</th>
-                <td style="font-weight:bold; color:red;">11月13日</td>
-            </tr>
-
-            <tr>
-                <th>曜日・時間</th>
-                <td style="font-weight:bold; color:red;">土15:00-19:30</td>
-            </tr>
-
-        <tr>
-            <th>入部費</th>
-            <td><?php echo $the_Course['entry_fee'];?></td>
-        </tr>
-        <tr>
-            <th>授業料</th>
-            <td><?php echo $the_Course['tuition'];?></td>
-        </tr>
-        </tbody>
-    </table>
-    <p>※受講内容は通常のZBrush基礎講座と全く同一になります。1日程にて2コマ分を開催致します。<br/><br/></p>
-    <?php } ?>
-
     <table>
         <tbody>
             <tr>
@@ -113,12 +78,18 @@ get_header(); ?>
                 <td><?php echo $the_Course['cycle'];?></td>
             </tr>
             <tr>
-                <th>開講日</th>
+<?php if (get_the_ID() == "123") { ?>
+                    <th>時間</th>
+<?php } else {?>
+                    <th>開講日</th>
+<?php } ?>
                 <td><?php echo $the_Course['start_date'];?></td>
             </tr>
     <?php if ($the_Course['day_time']) { ?>
             <tr>
+            
                 <th>曜日・時間</th>
+
                 <td><?php echo $the_Course['day_time'];?></td>
             </tr>
     <?php } ?>
@@ -206,7 +177,7 @@ get_header(); ?>
         </p>
         <a class="btn btnL" href="<?php bloginfo('url'); ?>/special#course-<?php the_ID(); ?>">特別講座の開催日時を見る</a>
     <?php } elseif ($the_Course['type'] == '添削塾') {?>
-        <a class="btn btnL" href="<?php bloginfo('url'); ?>/entry/entry-course#course-<?php the_ID(); ?>">添削塾に申し込む</a>
+        <a class="btn btnL" href="<?php bloginfo('url'); ?>/entry/entry-course#course-<?php the_ID(); ?>">申し込む</a>
     <?php } elseif ($the_Course['type'] == '通信講座') {?>
         <a class="btn btnL" href="<?php bloginfo('url'); ?>/entry/entry-correspond#course-<?php the_ID(); ?>">通信講座に申し込む</a>
     <?php } elseif ($the_Course['type'] == 'スポット講座') {?>
